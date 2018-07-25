@@ -14,14 +14,14 @@
     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Application Files\PNL Tool_1_0_0_44\PNL Tool.exe.manifest" size="25685">
+    <dependentAssembly dependencyType="install" codebase="Application Files\PNL Tool_1_0_0_44\PNL Tool.exe.manifest" size="24207">
       <assemblyIdentity name="PNL Tool.exe" version="1.0.0.44" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>I94PlYNe0GU48p4PwxYsNn3d9Y0=</dsig:DigestValue>
+        <dsig:DigestValue>M3DCYR3ndXG6MpQh2KUOeHGwaSg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
