@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
-  <asmv1:assemblyIdentity version="1.0.0.43" name="PNL Tool.exe" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
-  <description asmv2:iconFile="pnl.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <asmv1:assemblyIdentity name="PNL Tool.exe" version="1.0.0.43" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="pnl.ico" asmv2:publisher="SAGS" asmv2:product="PNL Tool" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="PNL Tool" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
     <commandLine file="PNL Tool.exe" parameters="" />
   </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
   <trustInfo>
     <security>
       <applicationRequestMinimum>
@@ -14,20 +15,6 @@
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-        <!--<requestedExecutionLevel level="requireAdministrator" uiAccess="false" />-->
-        <!-- UAC Manifest Options
-            If you want to change the Windows User Account Control level replace the 
-            requestedExecutionLevel node with one of the following.
-
-        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
-        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
-        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
-
-            Specifying requestedExecutionLevel node will disable file and registry virtualization.
-            If you want to utilize File and Registry Virtualization for backward 
-            compatibility then delete the requestedExecutionLevel node.
-        -->
-        <!--<requestedExecutionLevel level="requireAdministrator" uiAccess="false" />-->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
@@ -293,14 +280,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PNL Tool.exe" size="360448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PNL Tool.exe" size="361984">
       <assemblyIdentity name="PNL Tool" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>kD+361ZWV6VGixc7e6yZosTkgSw=</dsig:DigestValue>
+        <dsig:DigestValue>7WWB0HN0vDvZljZtmJ1NBgGhwng=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -394,7 +381,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>dQbU6vtVsdJEnpS2aVX1lPkYlPw=</dsig:DigestValue>
+      <dsig:DigestValue>WqPsCy1FNm/PC4BcXSxXLWqsfcQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database\Deboard_log.ldf" size="516096" writeableType="applicationData">
@@ -403,7 +390,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>rJiJvd9n+wsdXH21kpryx6axshk=</dsig:DigestValue>
+      <dsig:DigestValue>k4AErzfvx/45zvsapcVGgpLfTj0=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Pattern.txt" size="104">
@@ -415,13 +402,13 @@
       <dsig:DigestValue>vEQDbcb4lOuQzQgvbIkaObmEc5M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="PNL Tool.exe.config" size="3462">
+  <file name="PNL Tool.exe.config" size="3561">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>jyqp9KVxBsJn7psB9OAnBKF5eFQ=</dsig:DigestValue>
+      <dsig:DigestValue>+sCz5oKE4EsKA9FeSCHfkGn5Ngc=</dsig:DigestValue>
     </hash>
   </file>
   <file name="pnl.ico" size="9662">
@@ -451,11 +438,4 @@
       <dsig:DigestValue>tP2KvPljqenKa4Jh9lA26tK8azo=</dsig:DigestValue>
     </hash>
   </file>
-  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
-    <application>
-      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
-      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
-      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
-    </application>
-  </compatibility>
 </asmv1:assembly>

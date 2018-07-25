@@ -2,6 +2,9 @@
 <configuration>
   <configSections>
   </configSections>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+  </startup>
   <connectionStrings>
     <add name="LDCSConnectionString" connectionString="bOKBdmrcAX9BXOf6dI/tuZJX+Neo66IS07yi0mOdDXCKB46pSywiZZxKl5KC6HYeGUORPTtOHTvE0EOSOszbSZxDLhuyJzy7hK2jGtoC0bk=" />
     <add name="SMISConnectionString" connectionString="bOKBdmrcAX9BXOf6dI/tuRQ0kbsnQ3G9/DAnrrwyVe9H8k/IvFkUKfDhzE6u/Sd4MckxtlehRuzQQq27OG41NyJ8sY7GOJtE5aA9n1Fhh+E=" />
@@ -41,7 +44,7 @@
       </providers>
     </roleManager>
   </system.web>
-  <startup useLegacyV2RuntimeActivationPolicy="true">
-    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
   </startup>
 </configuration>
