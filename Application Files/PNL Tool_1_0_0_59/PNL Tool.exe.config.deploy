@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+  </configSections>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+  </startup>
+  <connectionStrings>
+    <add name="LDCSConnectionString" connectionString="bOKBdmrcAX9BXOf6dI/tuZJX+Neo66IS07yi0mOdDXCKB46pSywiZZxKl5KC6HYeGUORPTtOHTvE0EOSOszbSZxDLhuyJzy7hK2jGtoC0bk=" />
+    <add name="SMISConnectionString" connectionString="bOKBdmrcAX9BXOf6dI/tuRQ0kbsnQ3G9/DAnrrwyVe9H8k/IvFkUKfDhzE6u/Sd4MckxtlehRuzQQq27OG41NyJ8sY7GOJtE5aA9n1Fhh+E=" />
+    <add name="BlacklistConnectionString" connectionString="bOKBdmrcAX9BXOf6dI/tuRQ0kbsnQ3G9/DAnrrwyVe/UckbJhK3i1a32/YhEhal7MQ3GXb8UvRHp7efBGpY2MSG3GoWiUzUlLAEB+Q7hjhw=" />
+    <add name="SDCS.Properties.Settings.DeboardConnectionString"
+      connectionString="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\Database\Deboard.mdf;Integrated Security=True;User Instance=True"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <appSettings>
+    <add key="GabTimeout" value="5"/>
+    <add key="TimerInterval" value="3000"/>
+    <add key="ClientSettingsProvider.ServiceUri" value=""/>
+    <add key="BaseStation" value="SGN"/>
+
+    <add key="SGN_LDCS" value="bOKBdmrcAX9BXOf6dI/tuZJX+Neo66IS07yi0mOdDXCKB46pSywiZZxKl5KC6HYeGUORPTtOHTvE0EOSOszbSZxDLhuyJzy7hK2jGtoC0bk="/>
+    <add key="SGN_SMIS" value="bOKBdmrcAX9BXOf6dI/tuRQ0kbsnQ3G9/DAnrrwyVe9H8k/IvFkUKfDhzE6u/Sd4MckxtlehRuzQQq27OG41NyJ8sY7GOJtE5aA9n1Fhh+E="/>
+    <add key="SGN_Blacklist" value="bOKBdmrcAX9BXOf6dI/tuRQ0kbsnQ3G9/DAnrrwyVe/UckbJhK3i1a32/YhEhal7MQ3GXb8UvRHp7efBGpY2MSG3GoWiUzUlLAEB+Q7hjhw="/>
+
+    <add key="DAD_LDCS" value="+7cZQSQYPlCxKY0xWyQR+O4/qZIzUlrLknHDhpo4eJYPtWeVCCaEHaYkK/mke8rpqihvQ5yrHgmZL/wgkxaRr14zl9hdp3bKWnxRhJyMx+Y="/>
+    <add key="DAD_SMIS" value="+7cZQSQYPlCxKY0xWyQR+O4/qZIzUlrLknHDhpo4eJZuI/3gECfzwQVktb9cTDQNWRAxrAS1LefzKXPl9EbOuFnpP/1NVQF16r4zXtfUyFE4rAHXtQyEeOqNI7/j+r7F"/>
+    <add key="DAD_Blacklist" value="bOKBdmrcAX9BXOf6dI/tuRQ0kbsnQ3G9/DAnrrwyVe/UckbJhK3i1a32/YhEhal7FAjezEZ+t3EUr4joGRVjEcLLm2QF9cnOBkQtZE49OLk="/>
+
+    <add key="CXR_LDCS" value="+7cZQSQYPlCxKY0xWyQR+PKOO7fTjUqQ27E1mt8cfhdt1Kc7uSeXnMiGOS57Wl0VmddgwFH8dNVFwTf8Q2hvv4BJ0NNeNH8A/JvNdik0eyE/ZRswZ888/4UpJgW3CBia"/>
+    <add key="CXR_SMIS" value="+7cZQSQYPlCxKY0xWyQR+PKOO7fTjUqQ27E1mt8cfhfNsFoS9ZBDX5onsGjbvX14EFqzzDQia36mc8ysjKgdHk7M0hm5xBgA9rk5oH7jQn6crGjzjNWRURLFEupFoN09"/>
+    <add key="CXR_Blacklist" value="+7cZQSQYPlCxKY0xWyQR+PKOO7fTjUqQ27E1mt8cfheDzWVF/aWkXzU7/P8BJ8jeNWP1mvBMwDHu3GM0DsPsRI02jwpng2ePDSz1pPJ0S8iqkG2CVi4AvExzJFx99hpV"/>
+
+  </appSettings>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri=""/>
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400"/>
+      </providers>
+    </roleManager>
+  </system.web>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+  </startup>
+</configuration>
